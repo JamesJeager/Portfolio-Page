@@ -1,0 +1,200 @@
+.pageHome {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../../public/download.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow-x: hidden;
+  overflow: hidden;
+  flex-wrap: wrap; 
+}
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    background: rgba(47, 105, 180, 0.568);
+    border: 2px solid #000; 
+    padding: 30px;
+    border-radius: 15px;
+    color: #9e5a5a;
+    text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0c031d;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #0c0c0c;
+  margin-bottom: 25px;
+}
+
+.downloadButton {
+  display: inline-block;
+  background-color: #6200ea; 
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #3700b3;
+  box-shadow: 0px 4px 8px rgba(55, 0, 179, 0.2);
+}
+
+/* Mobile Small */
+@media (max-width: 320px) {
+  .pageHome {
+    padding: 10px;
+  overflow-x: hidden;
+  overflow: hidden;
+  flex-wrap: wrap;
+  max-width: 100%;
+  }
+
+  .info,
+  .about,
+  .contact,
+  .card {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .homeIcon {
+    width: 80%;
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .info h1,
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .info p,
+  .intro,
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .socialIcons img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Mobile Medium */
+@media (max-width: 375px) {
+  .pageHome {
+    padding: 15px;
+    
+  overflow-x: hidden;
+  overflow: hidden;
+  flex-wrap: wrap;
+  }
+
+  .info,
+  .about,
+  .contact,
+  .card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .homeIcon {
+    width: 250px;
+    height: 250px;
+  }
+
+  .info h1,
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .info p,
+  .intro,
+  .description {
+    font-size: 1rem;
+  }
+
+  .socialIcons img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 425px) {
+  .info,
+  .about,
+  .contact,
+  .card {
+    max-width: 500px;
+  }
+
+  .homeIcon {
+    width: 300px;
+    height: 300px;
+  }
+
+  .info h1,
+  .title {
+    font-size: 2rem;
+  }
+
+  .info p,
+  .intro,
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .homeContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .info {
+    max-width: 450px;
+  }
+
+  .homeIcon {
+    width: 350px;
+    height: 350px;
+  }
+
+  .info h1,
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .info p,
+  .intro,
+  .description {
+    font-size: 1.2rem;
+  }
+}
